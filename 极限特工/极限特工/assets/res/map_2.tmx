@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="225" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="shod" tilewidth="32" tileheight="32">
+  <image source="shod.png" width="648" height="224"/>
+ </tileset>
+ <tileset firstgid="141" name="sha" tilewidth="32" tileheight="32">
+  <image source="sha.jpg" width="480" height="800"/>
+ </tileset>
+ <layer name="Background" width="15" height="225">
+  <data encoding="base64" compression="zlib">
+   eJzt1He7DwQcxuHfObSkKWVESUMbUTS0NFQUDUpF0k5blCIaRMfe+9ibY++9996bY51j7939Lvzzva7nfgnPJyWRSDSlGc1pQUta0Zo2tKUd7elARzrRmS50pRvdSaUHPelFb/rQl370ZwADGcRghjCUYaQxnBGMZBSjGcNYxjGeCUxkEpOZwlSmMZ0ZzGQWs5nDXOYxnwUsZBGLWcJSlrGcFaxkFatZw1rWsZ4NbGQTm9nCVraxnR3sJJ1d7GYPe9lHBpns5wAHOcRhjnCUYxznBCc5xWnOcJZznOcCF0kkGclkISuXcTlXcCVXkY2ryc41XMt1XM8N3EgObiInN3MLuchNHvJyK/nIz23cTgHuoCB3chd3cw+FuJf7uJ8HeJCHeJjCFKEoj1CM4jzKY5SgJI/zBE/yFKV4mmd4lud4ntK8wIu8xMuU4RVe5TXKUo7XeYPyVOBN3uJt3qEilXiX96jM+3zAh1ShKh9RjY+pzid8ymd8zhd8yVd8TQ2+4Vu+43t+4Ed+oiY/U4va/MKv1OE3fqcu9fiD+jTgT/7ib/6hIY34l8Y04T9SaEozmtOClrSiNW1oSzva04GOdKIzXehKN7qTSg960ove9KEv/ejPAAYyiMEMYSjDSGM4IxjJKEYzhrGMYzwTmMgkJjOFqUxjOjOYySxmM4e5zGM+C1jIIhazhKUsYzkrWMkqVrOGtaxjPRvYyCY2s4WtbGM7O9hJOrvYzR72so8MMtnPAQ5yiMMc4SjHOM4JTnKK05zhLOc4zwUukkj2f5LJQkq0PdqeFG2Ptkfbo+3R9mh7tD3aHm2Ptkfbo+3R9mh7tD3aHm2Ptkfbo+3R9mh7tD3aHm2Ptkfbo+3R9mh7tD3aHm2Ptkfbo+3R9mh7tD012h5tT4q2R9uj7Ze67f8DGWOl6g==
+  </data>
+ </layer>
+ <layer name="Background1" width="15" height="225">
+  <data encoding="base64" compression="zlib">
+   eJztmWEOwiAMhXcEnR5Bp0dQz6De/ziWbCRE2VY6HC17X9J/NDPhvVfApgExdlR7Ye+J6pzxtyzhQHUU9LVUF6qroLdjrrtR3akegm88qV5Ub0FvzVjQrUST7dAn0WQ39JUGei+PBX9w8Z7geilc7z3B9VLq+lLAY8vRks81ebVG1vSa5Azr0Z5ZFoE35Zp0Wek1meqh8G6FeQVyEs59rr9jc3/K36HeU+9l0Pt256Clc32OuZAK983Ngdm9PaRvwC7bpW/AYbZb8i9Yh1ya5OZZ7LyhMc80eUXLWxDoiWmduz8xrVs+EwK9aD8DjxHLXu58iWWvxvkC5sk1g52epV5wekY+A23keIOa89dU5s6dcZG5dudvaTTdvWoDmpSx5nvtGnv07bGUPYLHtof23MD/Kb9gjo6jXc9agc96/uEti5r8AKaOK2s=
+  </data>
+ </layer>
+ <layer name="Background2" width="15" height="225">
+  <data encoding="base64" compression="zlib">
+   eJzt1UEKgCAUBuE56t8d6v61CVq0yQrFNx+4FBLnGaiHHGtp3Lsea/vuU1RAsDf1EWxP+kpwnjS+YKeqIdi6xhJsUvpTcMZUS3je/LmnpXnnRFUE/yeS7gXfB2lUwflUHcHe1SbYjuYX5uw8zHku6SrYuf4VbKyS4H2/tQOKeiFJ
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="15" height="225">
+  <object name="1" x="84" y="7172" width="282" height="20"/>
+  <object name="2" x="118" y="6375" width="281" height="20"/>
+  <object name="3" x="111" y="5573" width="244" height="19"/>
+  <object name="4" x="111" y="4773" width="244" height="19"/>
+  <object name="5" x="113" y="3972" width="244" height="19"/>
+  <object name="6" x="151" y="3171" width="244" height="19"/>
+  <object name="7" x="125" y="2375" width="244" height="19"/>
+  <object name="8" x="114" y="1575" width="244" height="19"/>
+  <object name="9" x="127" y="1025" width="244" height="19"/>
+ </objectgroup>
+ <objectgroup name="Enemys" width="15" height="225">
+  <object x="247" y="6160">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="293" y="6158">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="336" y="6156">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="365" y="4232">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="328" y="4233">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="137" y="4147">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="105" y="4150">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="171" y="4145">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="223" y="3479">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="200" y="3505">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="170" y="3481">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="378" y="2331">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="342" y="2332">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="305" y="2335">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="113" y="2441">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="141" y="2450">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="170" y="2433">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="396" y="6771">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object name="3" x="374" y="6736">
+   <properties>
+    <property name="random" value="42"/>
+   </properties>
+  </object>
+  <object x="133" y="6259">
+   <properties>
+    <property name="random" value="12"/>
+   </properties>
+  </object>
+  <object x="122" y="2774">
+   <properties>
+    <property name="random" value="42"/>
+   </properties>
+  </object>
+  <object x="384" y="6439">
+   <properties>
+    <property name="delay" value="10"/>
+    <property name="random" value="29"/>
+   </properties>
+  </object>
+  <object x="210" y="5699">
+   <properties>
+    <property name="random" value="41"/>
+   </properties>
+  </object>
+  <object x="368" y="5736">
+   <properties>
+    <property name="delay" value="10"/>
+    <property name="random" value="40"/>
+   </properties>
+  </object>
+  <object x="349" y="6771">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="99" y="6301">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="137" y="6300">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="178" y="6301">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="102" y="4559">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="136" y="4558">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="382" y="5520">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="421" y="5519">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="343" y="5519">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="112" y="5508">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="145" y="5516">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="173" y="5500">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="118" y="4524">
+   <properties>
+    <property name="random" value="42"/>
+   </properties>
+  </object>
+  <object x="400" y="4230">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="247" y="3907">
+   <properties>
+    <property name="delay" value="10"/>
+    <property name="random" value="34,40"/>
+   </properties>
+  </object>
+  <object x="365" y="3100">
+   <properties>
+    <property name="random" value="12"/>
+   </properties>
+  </object>
+  <object x="349" y="5961">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="393" y="5961">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="119" y="5168">
+   <properties>
+    <property name="random" value="12"/>
+   </properties>
+  </object>
+  <object x="113" y="7097">
+   <properties>
+    <property name="random" value="41"/>
+   </properties>
+  </object>
+  <object name="1" x="153" y="5804">
+   <properties>
+    <property name="random" value="71"/>
+   </properties>
+  </object>
+  <object x="196" y="5802">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="107" y="5806">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="220" y="5613">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="245" y="5625">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="273" y="5610">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="98" y="5202">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="141" y="5201">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="396" y="4043">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="362" y="4044">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object name="3" x="380" y="4012">
+   <properties>
+    <property name="random" value="42"/>
+   </properties>
+  </object>
+  <object name="3" x="388" y="5481">
+   <properties>
+    <property name="random" value="42"/>
+   </properties>
+  </object>
+  <object x="380" y="3138">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="346" y="3139">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="322" y="2882">
+   <properties>
+    <property name="random" value="41"/>
+   </properties>
+  </object>
+  <object x="238" y="1059">
+   <properties>
+    <property name="boss" value="1"/>
+    <property name="random" value="31"/>
+   </properties>
+  </object>
+  <object x="301" y="4968">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="339" y="4969">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="375" y="4967">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="112" y="4895">
+   <properties>
+    <property name="random" value="34"/>
+   </properties>
+  </object>
+  <object x="129" y="3920">
+   <properties>
+    <property name="delay" value="10"/>
+    <property name="random" value="29"/>
+   </properties>
+  </object>
+  <object x="390" y="3377">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="355" y="3377">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="321" y="3377">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="189" y="3234">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="157" y="3242">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="130" y="3238">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="171" y="3020">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="105" y="3020">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="138" y="3017">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="306" y="2547">
+   <properties>
+    <property name="delay" value="10"/>
+    <property name="random" value="40,34"/>
+   </properties>
+  </object>
+  <object x="141" y="2153">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="114" y="2167">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="177" y="2162">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="245" y="2297">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="211" y="2298">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="314" y="1639">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="373" y="1629">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="344" y="1646">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="356" y="5278">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="318" y="5285">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="389" y="5281">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="363" y="5173">
+   <properties>
+    <property name="delay" value="10"/>
+    <property name="random" value="29"/>
+   </properties>
+  </object>
+  <object x="352" y="4659">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="373" y="4625">
+   <properties>
+    <property name="random" value="12"/>
+   </properties>
+  </object>
+  <object x="395" y="4658">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="273" y="6998">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="201" y="6999">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="237" y="6999">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="237" y="5895">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="191" y="5897">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="280" y="5893">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="210" y="4537">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="247" y="4536">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="282" y="4534">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="298" y="4112">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="262" y="4115">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="289" y="4143">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="335" y="3705">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="298" y="3702">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="371" y="3702">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="316" y="2986">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="285" y="2993">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="254" y="2987">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="331" y="2448">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="366" y="2450">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="297" y="2447">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="333" y="1991">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="300" y="1992">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="362" y="1985">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="171" y="1232">
+   <properties>
+    <property name="random" value="101"/>
+   </properties>
+  </object>
+  <object x="121" y="1170" width="267" height="12">
+   <properties>
+    <property name="random" value="100"/>
+   </properties>
+  </object>
+  <object x="216" y="6443">
+   <properties>
+    <property name="random" value="103"/>
+   </properties>
+  </object>
+  <object x="109" y="6062">
+   <properties>
+    <property name="random" value="103"/>
+   </properties>
+  </object>
+  <object x="235" y="5284">
+   <properties>
+    <property name="random" value="103"/>
+   </properties>
+  </object>
+  <object x="239" y="4647">
+   <properties>
+    <property name="random" value="103"/>
+   </properties>
+  </object>
+  <object x="245" y="4863">
+   <properties>
+    <property name="random" value="33"/>
+   </properties>
+  </object>
+  <object x="249" y="3237">
+   <properties>
+    <property name="random" value="103"/>
+   </properties>
+  </object>
+  <object x="258" y="2804">
+   <properties>
+    <property name="random" value="103"/>
+   </properties>
+  </object>
+  <object x="254" y="1739">
+   <properties>
+    <property name="random" value="103"/>
+   </properties>
+  </object>
+  <object x="153" y="1751">
+   <properties>
+    <property name="random" value="103"/>
+   </properties>
+  </object>
+  <object x="233" y="1631">
+   <properties>
+    <property name="random" value="103"/>
+   </properties>
+  </object>
+  <object x="371" y="6861">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="335" y="6861">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="407" y="6860">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="126" y="6704">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="90" y="6704">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="162" y="6703">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="322" y="6578">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="356" y="6570">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="284" y="6584">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="289" y="5698">
+   <properties>
+    <property name="random" value="41"/>
+   </properties>
+  </object>
+  <object x="134" y="5738">
+   <properties>
+    <property name="delay" value="10"/>
+    <property name="random" value="40"/>
+   </properties>
+  </object>
+  <object x="343" y="5382">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="279" y="5386">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="311" y="5394">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="158" y="5385">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="222" y="5381">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="190" y="5393">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="242" y="5059">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="208" y="5060">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="175" y="5063">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="208" y="4968">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="172" y="4970">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="134" y="4969">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="385" y="4889">
+   <properties>
+    <property name="random" value="34"/>
+   </properties>
+  </object>
+  <object x="292" y="4751">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="364" y="4748">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="329" y="4750">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="111" y="4749">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="183" y="4746">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="148" y="4748">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="359" y="4427">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="322" y="4428">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="394" y="4425">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="161" y="4394">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="124" y="4395">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="196" y="4392">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="256" y="4282">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="219" y="4283">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="291" y="4280">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="369" y="3922">
+   <properties>
+    <property name="delay" value="10"/>
+    <property name="random" value="29"/>
+   </properties>
+  </object>
+  <object x="223" y="3819">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="187" y="3822">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="150" y="3819">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="394" y="3818">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="358" y="3821">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="321" y="3818">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="183" y="3725">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object name="3" x="167" y="3694">
+   <properties>
+    <property name="random" value="12"/>
+   </properties>
+  </object>
+  <object x="149" y="3726">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="251" y="3588">
+   <properties>
+    <property name="random" value="40"/>
+   </properties>
+  </object>
+  <object x="375" y="3586">
+   <properties>
+    <property name="random" value="40"/>
+   </properties>
+  </object>
+  <object x="140" y="3589">
+   <properties>
+    <property name="random" value="40"/>
+   </properties>
+  </object>
+  <object x="275" y="3344">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="240" y="3344">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="206" y="3344">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="219" y="3113">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="293" y="3112">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="252" y="3114">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="204" y="2883">
+   <properties>
+    <property name="random" value="41"/>
+   </properties>
+  </object>
+  <object x="105" y="2664">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="169" y="2657">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="137" y="2658">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="196" y="2547">
+   <properties>
+    <property name="delay" value="10"/>
+    <property name="random" value="40,34"/>
+   </properties>
+  </object>
+  <object x="229" y="2262">
+   <properties>
+    <property name="random" value="12"/>
+   </properties>
+  </object>
+  <object x="299" y="2110">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="270" y="2127">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="237" y="2117">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="241" y="1975">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="212" y="1981">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="179" y="1982">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="375" y="1871">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="341" y="1872">
+   <properties>
+    <property name="random" value="37,38,37"/>
+   </properties>
+  </object>
+  <object x="275" y="1854">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="246" y="1860">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="213" y="1861">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="220" y="6808">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="184" y="6808">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="256" y="6807">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="259" y="6640">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="223" y="6640">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="295" y="6639">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="187" y="6515">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="151" y="6515">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="223" y="6514">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="293" y="6351">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="257" y="6351">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="329" y="6350">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="256" y="6228">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="220" y="6228">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="292" y="6227">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="194" y="6111">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="158" y="6111">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="230" y="6110">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="274" y="6008">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="238" y="6008">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="310" y="6007">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="308" y="5837">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="272" y="5837">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="344" y="5836">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="259" y="5460">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="223" y="5460">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="295" y="5459">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="153" y="5330">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="117" y="5330">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="189" y="5329">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="260" y="5192">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="224" y="5192">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="296" y="5191">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="296" y="5117">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="260" y="5117">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="332" y="5116">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="168" y="4684">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="132" y="4684">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="204" y="4683">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="177" y="4461">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="141" y="4461">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="213" y="4460">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="290" y="4338">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="254" y="4338">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="326" y="4337">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="178" y="4218">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="142" y="4218">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="214" y="4217">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="172" y="4052">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="136" y="4052">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="208" y="4051">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="285" y="3859">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="249" y="3859">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="321" y="3858">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="222" y="3644">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="186" y="3644">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="258" y="3643">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="318" y="3453">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="282" y="3453">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="354" y="3452">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="299" y="3281">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="263" y="3281">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="335" y="3280">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="191" y="3071">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="155" y="3071">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="227" y="3070">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="352" y="2719">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="316" y="2719">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="388" y="2718">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="264" y="2619">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="228" y="2619">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="300" y="2618">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="169" y="2343">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="133" y="2343">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="205" y="2342">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="299" y="2212">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="263" y="2212">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="335" y="2211">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="174" y="2055">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="138" y="2055">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="210" y="2054">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="245" y="1912">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="209" y="1912">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="281" y="1911">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="165" y="1813">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="129" y="1813">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="201" y="1812">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="201" y="1686">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="165" y="1686">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+  <object x="237" y="1685">
+   <properties>
+    <property name="random" value="10,11,13,14"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Decorate1" width="15" height="225">
+  <data encoding="base64" compression="zlib">
+   eJztmc9TT3EUho/8FlmFiMhKRERWIiKyEhGRlYiIrES8RP5tjzlLM9e7aurbeWfexZl5nsVn5t7PPTO3MyIO0IPhBU7w6qSnmPvoadOFU196usI8TK+aLpyG09M95gl633ThNJGeXjDP0pemC6fZ9PSJeYl+Nl04LaUnU2mZ7KS76G6ThxO88HSEuZseNV04daenc8wD9LzpwmkgPd1gHqU3TRdOo+npEfMUfWy6cJpKT2+Y5+lb04XTfHr6FvlwfTddOCk9mUrLZC9nbqd7zLPDRXt6cRynhx4zXbjoSS8u4gzSC6YLF4PpxW2cMXrLdOFiLL14ijNNn5guXEynF+9xFug704WLhfTiJ84K/WG6cLGSXt0b/8l6uDe2MLfRraYLp7b0/u4NtW80ZDPvG/XuN2c9vPum0jLZz5k76D7z7HDRkV6cxOmlJ0wXLnrTi8s4Q/SS6cLFUHpxF2ec3jFduBhPL57jzNBnpgsXM+nFR5xF+sF04WIxvfiNs0p/mS5crKa36VLf3+bU97dSqWy21P7cnNqf1z61qzSndpVKpbIRU/tGc2rfWPvUP77mrId/fBU/2+h2usPk4QQvPB1i7qKHTRdOXenpDHM/PWu6cOpPT9eYR+h104XTSHp6wDxJH5ounCbT0yvmOfradOE0l56+MC/Tr6YLp+X0ZCqVSsundsLm1E5YqfybujeaU/fG2qd27+bU7r2xUndsc+qO3Vj5AxRCa7g=
+  </data>
+ </layer>
+ <layer name="Decorate2" width="15" height="225">
+  <data encoding="base64" compression="zlib">
+   eJztl89TjmEUho/fEVmJiMhKRERWIiKyEhGRlYiIrETcRP5t18yZNt/icd5N836955q5F2fmvhbvzDfnPJ9Z+7GT7CK7g316oi88HWHuIUeDLj31uKdzzIPkfNClp0H3dIN5jNwMuvQ05p4eMU+Tx0GXnqbd0xvmBfI26NLTgnv6xrxKvgddelp1T0Fly3CQb+4iB4LfTs+63LPTOP3kVNClZ/3u2VWcEXIl6NKzEffsPs4kuRd06dmke/YSZ468CLr0bM49+4yzTD4FXXq27J79xVknf4IuPVt3L0mShpJvhjL5Zth89vPNnWRf8NvpWad7dhKnj5wIuvSszz27jDNMLgVdejbsnt3FmSB3gi49m3DPnuPMkmdBl57NumcfcZbIh6BLz5bcs984a+RX0KVna+41jnzHlsl3bHuRd79MHe5+3sEydbiDeRfK5F3YfPI3WSZ/k5vPNrKd7Aj26Ym+8HSIuZscDrr01O2ezjAPkLNBl54G3NM15lFyPejS06h7esA8RR4GXXqack+vmOfJ66BLT/Pu6QvzCvkadOlpxT3tYe4ge4MuPXW4p2PMveR40KWnXvd0gXmIXAy69DTknm4xj5PbQZeext3TE+YZ8jTo0tOMe3rHvEjeB116WnRPP8wXxs+gS09yL9+E/6EOb8KmsbHbq9C626vQutur0Lrbq9C626vQutur0Lrbq7Cx2ytqjSbfz2Xy/dwc8r1Rpg7vjfxvVaYO/62CypYhb2iZOtzQ3O1l6rDbm0besjJ5y9qLvINl6nAHm0bu2DLtvmP/AYQ9wto=
+  </data>
+ </layer>
+</map>

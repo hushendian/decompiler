@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/xl_update_shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="40.0px" android:textColor="#ff66b3ff" android:gravity="center" android:id="@id/updateViewTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/xl_update_title" />
+    <View android:background="#ff4a4aff" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <TextView android:textSize="30.0px" android:textColor="#ffcccccc" android:id="@id/updateContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" />
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="#ffffffff" android:id="@id/updateBtn" android:background="@drawable/xl_update_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xl_update_btn" />
+        <Button android:textColor="#ffcccccc" android:id="@id/cancelBtn" android:background="@drawable/xl_cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/xl_cancel_btn" />
+    </LinearLayout>
+</LinearLayout>

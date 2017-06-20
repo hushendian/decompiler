@@ -1,0 +1,103 @@
+{
+   "designHeight" : 800,
+   "designWeight" : 400,
+   "name" : null,
+   "version" : 1,
+   "widgetTree" : {
+      "children" : [
+         {
+            "children" : [],
+            "name" : "ID_PICTURE_4118",
+            "options" : {
+               "flipX" : false,
+               "flipY" : false,
+               "font" : "普通",
+               "group" : 0,
+               "height" : 110,
+               "image" : "common/jq_kuang.png",
+               "name" : "ID_PICTURE_4118",
+               "opacity" : 100,
+               "rotation" : 0,
+               "scale9" : false,
+               "visible" : true,
+               "width" : 396,
+               "x" : 282,
+               "y" : 581,
+               "zorder" : 0
+            },
+            "type" : "ImageView"
+         },
+         {
+            "children" : [],
+            "name" : "TEXT_DES",
+            "options" : {
+               "align" : 2,
+               "color" : "255,255,255",
+               "effect" : "",
+               "flipX" : false,
+               "flipY" : false,
+               "font" : "普通",
+               "fontName" : "msyh.ttf",
+               "fontSize" : 18,
+               "group" : 0,
+               "height" : 78,
+               "image" : "",
+               "isMultiLine" : true,
+               "name" : "TEXT_DES",
+               "offpos" : 0,
+               "opacity" : 100,
+               "rotation" : 0,
+               "scale9" : false,
+               "text" : "",
+               "visible" : true,
+               "width" : 250,
+               "x" : 111,
+               "y" : 527,
+               "zorder" : 0
+            },
+            "type" : "Label"
+         },
+         {
+            "children" : [],
+            "name" : "PICT_TX",
+            "options" : {
+               "flipX" : false,
+               "flipY" : false,
+               "font" : "普通",
+               "group" : 0,
+               "height" : 178,
+               "image" : "common/jp_tx2.png",
+               "name" : "PICT_TX",
+               "opacity" : 100,
+               "rotation" : 0,
+               "scale9" : false,
+               "visible" : true,
+               "width" : 113,
+               "x" : 409,
+               "y" : 628,
+               "zorder" : 0
+            },
+            "type" : "ImageView"
+         }
+      ],
+      "name" : "ID_FRAME_23967",
+      "options" : {
+         "flipX" : false,
+         "flipY" : false,
+         "font" : "普通",
+         "group" : 0,
+         "height" : 800,
+         "image" : "",
+         "name" : "ID_FRAME_23967",
+         "opacity" : 100,
+         "rotation" : 0,
+         "scale9" : false,
+         "visible" : true,
+         "width" : 480,
+         "x" : 240,
+         "y" : 400,
+         "zorder" : 0
+      },
+      "type" : "Panel"
+   }
+}

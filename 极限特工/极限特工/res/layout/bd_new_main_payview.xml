@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/xlMainViewLayout" android:background="@drawable/bd_new_bg_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_height="0.0px" android:layout_weight="1.0" layout="@layout/bd_dialog_header" />
+    <RelativeLayout android:id="@id/hintContainer" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="3.0">
+        <ViewStub android:id="@id/xlPaySMSTip" android:layout="@layout/bd_payment_sms_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/xlPayThirdPart" android:layout="@layout/xl_payment_third_part" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/xl_pay_dialog_pane" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/xl_color_000000" android:gravity="center" android:id="@id/xl_dialog_tv_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/dialog_confirmexit" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/btnContainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <Button android:textSize="18.0sp" android:textColor="@color/xl_color_333333" android:textColorHint="@color/xl_chess_rankdate_text_color" android:gravity="center" android:id="@id/xl_dialog_btn1" android:background="@drawable/bd_btn_confirm_quit_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/xl_btn_string_return" android:maxEms="5" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <Button android:textSize="18.0sp" android:textColor="@color/xl_color_ffffff" android:gravity="center" android:id="@id/xl_dialog_btn2" android:background="@drawable/bd_btn_pointer_game_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/xl_dialog_string_close" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:visibility="visible" android:layout_height="0.0px" android:layout_weight="1.0" layout="@layout/xl_dialog_footer" />
+</LinearLayout>

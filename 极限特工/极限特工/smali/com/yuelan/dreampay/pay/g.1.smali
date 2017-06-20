@@ -1,0 +1,78 @@
+.class final Lcom/yuelan/dreampay/pay/g;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field final synthetic a:Lcom/yuelan/dreampay/pay/MiLiSmsPay;
+
+.field private final synthetic b:Ljava/lang/String;
+
+.field private final synthetic c:Landroid/os/Handler;
+
+
+# direct methods
+.method constructor <init>(Lcom/yuelan/dreampay/pay/MiLiSmsPay;Ljava/lang/String;Landroid/os/Handler;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/yuelan/dreampay/pay/g;->a:Lcom/yuelan/dreampay/pay/MiLiSmsPay;
+
+    iput-object p2, p0, Lcom/yuelan/dreampay/pay/g;->b:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/yuelan/dreampay/pay/g;->c:Landroid/os/Handler;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    :try_start_0
+    iget-object v0, p0, Lcom/yuelan/dreampay/pay/g;->b:Ljava/lang/String;
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    mul-int/lit16 v0, v0, 0x3e8
+
+    int-to-long v0, v0
+
+    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
+
+    :goto_0
+    iget-object v0, p0, Lcom/yuelan/dreampay/pay/g;->c:Landroid/os/Handler;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/NumberFormatException;->printStackTrace()V
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
+
+    goto :goto_0
+.end method

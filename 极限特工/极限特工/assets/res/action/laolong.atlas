@@ -1,0 +1,82 @@
+
+laolong.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiao
+  rotate: false
+  xy: 278, 2
+  size: 12, 19
+  orig: 12, 19
+  offset: 0, 0
+  index: -1
+md
+  rotate: true
+  xy: 2, 3
+  size: 92, 72
+  orig: 92, 72
+  offset: 0, 0
+  index: -1
+ml
+  rotate: false
+  xy: 278, 23
+  size: 13, 72
+  orig: 13, 72
+  offset: 0, 0
+  index: -1
+rs
+  rotate: true
+  xy: 293, 13
+  size: 26, 23
+  orig: 26, 23
+  offset: 0, 0
+  index: -1
+rss
+  rotate: true
+  xy: 346, 54
+  size: 41, 45
+  orig: 41, 45
+  offset: 0, 0
+  index: -1
+rt
+  rotate: true
+  xy: 346, 5
+  size: 47, 42
+  orig: 47, 42
+  offset: 0, 0
+  index: -1
+ry
+  rotate: true
+  xy: 150, 11
+  size: 84, 79
+  orig: 84, 79
+  offset: 0, 0
+  index: -1
+sanjiao
+  rotate: true
+  xy: 293, 41
+  size: 54, 51
+  orig: 54, 51
+  offset: 0, 0
+  index: -1
+td
+  rotate: true
+  xy: 76, 5
+  size: 90, 72
+  orig: 90, 72
+  offset: 0, 0
+  index: -1
+tg
+  rotate: true
+  xy: 231, 15
+  size: 80, 45
+  orig: 80, 45
+  offset: 0, 0
+  index: -1
+tl
+  rotate: true
+  xy: 150, 4
+  size: 5, 44
+  orig: 5, 44
+  offset: 0, 0
+  index: -1

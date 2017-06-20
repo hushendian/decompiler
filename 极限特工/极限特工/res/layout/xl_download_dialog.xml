@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/xl_update_shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="40.0px" android:textColor="#ff66b3ff" android:gravity="center" android:id="@id/downloadtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/xl_update_ing" />
+    <View android:background="#ff4a4aff" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <ProgressBar android:id="@id/pb_progressbar" android:background="@drawable/xl_shape_progressbar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="30.0dip" android:max="100" android:progress="50" style="@style/StyleProgressBarMini" />
+    <TextView android:textSize="30.0px" android:textColor="#ffcccccc" android:id="@id/downloadprogress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:minWidth="280.0dip" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/xlMainHeadBack" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xl_pay_back_selector" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/xlMainHeadClose" android:padding="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xl_pay_close_selector" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    <View android:background="#ffcccccc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/xlMainHeadClose" />
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/xlMainHeadImage" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/xl_title_icon" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/xl_color_ffffff" android:gravity="center" android:id="@id/xlMainHeadTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/xl_payment_dialog_title" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="50" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="grass" tilewidth="32" tileheight="32">
+  <image source="grass.jpg" width="480" height="800"/>
+ </tileset>
+ <tileset firstgid="376" name="grassc" tilewidth="32" tileheight="32">
+  <image source="grassc.png" width="896" height="224"/>
+ </tileset>
+ <layer name="Background" width="15" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1WPbFwYUB+Anuyfbtu16sm3b5jK3bJtbjWHLri27MdtuaeHuG7RXvfmf69xf4Heu6/yCggLzqTObOcxlHvNZwEIWsZglLGUZy1nBSlbxNd+wmjV8y3d8zw/8yE+sZR3r2cDP/MJGNrGZLWxlG9vZwU52sZs97GUf+/mV3zjAQQ5xmCMc5RjHOcFJTnGaM5zld/7gT/7ib/7hHOe5wEUucZkrXOUa17nBTW5xmzvc5R73ecBDHvGYJzzlGc/5lxe85BWvecN/vOUd7z8eKZQlNGEISzjCE4GIRCIyUYhKNKITTAxiEovYxCEu8YhPAhKSiMQkISnJSE4KUpKK1KQhLelITwYykonMZCEr2chODnKSi9zkIS/5yE8BClKIwhShKMUoTglKUooQSlOGspSjPBWoSCUqU4WqVKM6NahJLWpTh7rUoz4NaEgjGtOEpjSjOS1oSSta04a2tKM9HehIJzrTha50ozs96EkvetOHvvQLZPW/srJBoQlDWMIRnghEJBKRiUJUohGdYGIQk1jEJg5xiUd8EpCQRCQmCUlJRnJSkJJUpCYNaUlHejKQkUxkJgtZyUZ2cpCTXOQmD3nJR34KUJBCFKYIRSlGcUpQklKEUJoylKUc5alARSpRmSpUpRrVqUFNalGbOtSlHvVpQEMa0ZgmNKUZzWlBS1rRmja0pR3t6UBHOtGZLnSlG93pQU960Zs+9KUf/RnAFwxkEIMZwlCGMZwRjGQUoxnDl3zFWMYxnglMZBKTmcJUpjGdGcxkVlCgBwM9GOjBz/3bPwD2GSPc
+  </data>
+ </layer>
+ <layer name="Background1" width="15" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztktkJAjEURZMU4W4bLt357S724C7Tg4JahYJLE+4HzEe+NDMRGTUXDgkv74YXboTw8vLy+m1NpZu/q/1V1hrUoWF5Z6D7eqx9GMDQcZ64quPwrndlFEVBzPNoMl8L2hZzzuiZG30j9mOY6NqzjNacbYzzBfslrHTtnzM6SFHZww62EMYrFf1ww3e18JoZ5fHlIAsZ9dprZlSmvwRFKFh4P6UjM57gDJeQuSaUEElIQVo9at/8r6LoDkZYKu8=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="15" height="50">
+  <object name="1" x="90" y="1573" width="282" height="20"/>
+  <object name="1" x="96" y="874" width="282" height="20"/>
+ </objectgroup>
+ <objectgroup name="Enemys" width="15" height="50">
+  <object x="231" y="1208">
+   <properties>
+    <property name="boss" value="1"/>
+    <property name="delay" value="10"/>
+    <property name="random" value="93"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Decorate1" width="15" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztlMcNAjEUBf9yJHZB7BEe0AWxiyV1saQultQA4xvcbEsckPykuXkuI9tmaWlpaf+xa2a6wBlC3RfOEx6e7jgzm8AUWhVTExoVP3eJs4I1DHD60PN0dzh7OGQ+p79HF6OP6xQ8uhh9XKfg0cXo4zoFjy5GH9cpLe0nG3KnR6CIuz3DmcMiws1xNrCNcAucI5wi3BLnBndPly6ij+ikKu+wBnXP90gX0Ud0UhunA11Ply6ij/KI/5wuoo+KCJcuoo/KCJcuoo/rFOzSRfRxnYLdz70BNVo5EA==
+  </data>
+ </layer>
+ <layer name="Decorate2" width="15" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1DkyBXEUhfHzOjEG2IIxwAY9nABb8AwBtuAZAmzBGGALxgCx71YHhLf/iSrVt+qE36v2q25Se+21197/vLlKnmUz7K+fpeRWOtIqc6d5u02zw3YL2mOaE3Za0N7Q3LK7gvaV5o29J1tcjI9x8nAljbDRKtfiYnyMU7wf4j2J9yV1uBgf4+QlnrXLlpPPjIvxMU7epOmxrWSLi/ExTj6k6bOjZIuL8QknX9Jcsetk+/s7eqJ5Zi/JFhd3aycP4DvIhpLOuLhXO3mSZopNJ1tc3K+dnCt+DhfjE06NW1yMTzg1bnExPuHkDfp1tpb8HVyMTzj5gGaf7RU8wwXNOTsraB9pHth9QftF88k+ki0uwkc4aYK/eZyNJf/P4yJ8hJMWaRbYfLLFRfiEk5p++7gIn3BS028fF+ETTvoGvF1o8g==
+  </data>
+ </layer>
+</map>

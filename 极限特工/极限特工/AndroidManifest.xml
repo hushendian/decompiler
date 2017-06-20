@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.qh.zxjxbtg">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.ms.ezqx.MyApplication" >
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.ms.ezqx.Game01" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+		 <meta-data android:name="xlsdk_appid" android:value="4856"/>
+        <meta-data android:name="xlsdk_appkey" android:value="0bc9a005016d45cfa3b58305a7178056"/>
+        <meta-data android:name="xlsdk_appsecret" android:value="0bc9a005016d45cfa3b58305a7178056"/>
+        <meta-data android:name="xlsdk_channel" android:value="0"/>
+        <meta-data android:name="xlsdk_paySDK" android:value="true"/>
+        <meta-data android:name="xlsdk_paySMS" android:value="true"/>
+        <meta-data android:name="xlsdk_payThird" android:value="true"/>
+        <meta-data android:name="xlsdk_ad" android:value="false"/>
+        <meta-data android:name="xlsdk_upData" android:value="false"/>
+        <service android:enabled="true" android:name="com.xingluo.platform.single.sms.service.XLGhostService"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.xingluo.platform.single.pay.ui.XLContainerActivity" android:screenOrientation="portrait" android:theme="@style/XL.Theme.NoBackGround.NoAnimation"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xingluo.platform.ad.ui.XLStartDownloadActivity" android:screenOrientation="portrait" android:theme="@style/xlsdk_theme_dialog"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.xingluo.platform.ad.ui.XLLotteryDrawActivity" android:screenOrientation="portrait" android:theme="@style/XL.Theme.NoBackGround.NoAnimation"/>
+        <service android:name="com.xingluo.platform.ad.suspend.XLSuspensionService"/>
+        <service android:name="com.xingluo.platform.ad.suspend.XLInitService"/>
+        <service android:name="com.xingluo.platform.ad.suspend.XLBannerService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xingluo.platform.gameplus.service.GPDownloadService" android:process="com.xingluo.platform.gameplus.service">
+            <intent-filter>
+                <action android:name="com.xingluo.platform.gameplus.service"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xingluo.platform.gameplus.install.GPSilentInstallService"/>
+        <receiver android:name="com.xingluo.platform.gameplus.broadcast.GPNotificaionReceiver">
+            <intent-filter>
+                <action android:name="xingluo.platform.gameplus.intent.action.CANCLE_NOTIFICATION"/>
+                <action android:name="xingluo.platform.gameplus.intent.action.DO_NOTIFICATION_CLICK"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xingluo.platform.gameplus.broadcast.GPInstallPackageReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.xingluo.single.update.activity.CheckUpdateAcitivty" android:screenOrientation="portrait" android:theme="@style/XL.Theme.NoBackGround.NoAnimation"/>
+        <service android:name="com.xingluo.single.update.service.CheckUpdateService"/>
+        <receiver android:name="com.xingluo.single.update.receiver.DownloadResultReceiver"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.xingluo.platform.single.third.activity.ThirdPayActivity" android:screenOrientation="portrait" android:theme="@style/XL.Theme.NoBackGround.NoAnimation"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:launchMode="singleTask" android:name="com.xingluo.platform.single.third.activity.XLWebPayViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.ipaynow.plugin.activity.PayMethodActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|smallestScreenSize" android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Dialog"/>
+        <meta-data android:name="xl_billing_otherpay" android:value="true"/>
+        <meta-data android:name="xl_billing_chinaunicom" android:value="true"/>
+        <meta-data android:name="xl_billing_chinamobile" android:value="true"/>
+        <meta-data android:name="xl_billing_chinatele" android:value="true"/>
+        <meta-data android:name="xl_Egame" android:value="true"/>
+        <activity android:name="com.unicom.wostore.unipay.paysecurity.SecurityActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <service android:name="com.unicom.wostore.unipay.paysecurity.SecurityServiceFramework"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="cn.egame.terminal.paysdk.EgamePayActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:exported="true" android:name="cn.play.dserv.EmpActivity"/>
+        <service android:enabled="true" android:exported="false" android:label="dservice" android:name="cn.play.dserv.DService" android:process=":dservice_v1"/>
+        <receiver android:name="cn.play.dserv.DsReceiver" android:process=":dservice_v1">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.play.dservice"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="EGAME_CHANNEL" android:value="10000000"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.yuelan.dreampay.activity.DownLoadListViewActivity"/>
+        <service android:exported="true" android:name="com.yuelan.dreampay.service.ShieldSmsService" android:process=":milipay_sms_v1"/>
+        <receiver android:name="com.yuelan.dreampay.service.StartReceiver" android:process=":milipay_sms_v1">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.yuelan.codelib.download.DownLoadService" android:process=":milipay_sms_v1"/>
+        <meta-data android:name="MILI_PAY_APPID" android:value="21840154"/>
+        <meta-data android:name="MILI_PAY_CHANNELID" android:value="defult"/>
+    </application>
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.webkit.permission.PLUGIN"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+</manifest>
